@@ -7,9 +7,11 @@
 }
 
 :root {
-  --body-color: #32495e;
+  --principal-color: #32495e;
   --white-color: #fff;
   --font-primary: "Open Sans", sans-serif;
+
+  --blue-color-page: #177d9b;
 }
 
 .container {
@@ -24,6 +26,6 @@ html {
 }
 
 body {
-  background: var(--body-color);
+  background: var(--principal-color);
   font-family: var(--font-primary);
 }

@@ -1,6 +1,29 @@
 /* Header */
 
 header {
+  position: relative;
+}
+
+header::before,
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  z-index: -1;
+}
+
+header::before {
+  left: 0;
+  background-color: var(--blue-color-page);
+}
+header::after {
+  left: 50%;
+  background-color: var(--white-color);
+}
+
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -15,44 +38,21 @@ header {
 .bar {
   width: 30px;
   height: 3px;
-  background-color: var(--white-color);
+  background-color: var(--principal-color);
   margin-bottom: 6px;
 }
 
-.close-icon {
+.close-icon img {
   display: none;
-  width: 40px;
-  height: 40px;
-  background-color: #fff;
-  color: #333;
-  border-radius: 50%;
-  text-align: center;
-  font-size: 2rem;
-  line-height: 40px;
   position: absolute;
-  top: 10px;
+  width: 4rem;
+  top: 2rem;
   right: 10px;
   cursor: pointer;
   z-index: 2;
 }
 
 .menu {
-  display: none;
-}
-
-.active {
-  display: block;
-  background-color: #333;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .menu ul {
@@ -73,10 +73,31 @@ header {
 }
 
 @media (max-width: 768px) {
+  .menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .active {
+    background-color: var(--principal-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+  }
+
   .menu-toggle {
     display: block;
   }
-  .menu.active .close-icon {
+  .menu.active .close-icon img {
     display: block;
   }
 }
