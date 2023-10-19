@@ -38,7 +38,7 @@ header::after {
 .bar {
   width: 30px;
   height: 3px;
-  background-color: var(--principal-color);
+  background-color: var(--white-color);
   margin-bottom: 6px;
 }
 
@@ -52,31 +52,46 @@ header::after {
   z-index: 2;
 }
 
-.menu {
-}
+/* fim menu_toggle */
 
 .menu ul {
   list-style: none;
   padding: 0;
   margin: 0;
-}
 
-.menu li {
-  padding: 15px;
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .menu a {
   text-decoration: none;
-  color: var(--white-color);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  color: var(--principal-color);
+  padding: 0.6rem;
 }
 
 @media (max-width: 768px) {
+  header::before,
+  header::after {
+    content: none; /* Remove os elementos ::before e ::after */
+  }
+
   .menu {
     display: none;
     opacity: 0;
     transition: opacity 0.3s ease;
+  }
+
+  .menu ul {
+    flex-direction: column;
+  }
+
+  .menu ul li {
+    padding: 1rem;
+  }
+
+  .menu a {
+    color: var(--white-color);
   }
 
   .active {
