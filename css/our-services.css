@@ -1,0 +1,122 @@
+#our-services {
+  margin-top: 20px;
+}
+
+body {
+  height: 3000px;
+}
+
+.our-services--title h2 {
+  font: var(--font-title-main);
+  color: var(--white-color);
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 16px;
+}
+
+.our-services--title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white-color);
+  border-radius: 0 4px 4px 0;
+  width: 100%;
+  height: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .our-services--title h2 {
+    font: var(--font-title-main-mobile);
+    padding-bottom: 2px;
+  }
+  .our-services--content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+  }
+
+  .our-service {
+    margin-top: 1.5rem;
+    width: 21rem;
+    height: 250px;
+    position: relative;
+  }
+
+  .our-service.report {
+    background: url("images/services-img/estetoscopio.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .our-service.lending {
+    background: url("images/services-img/comodato.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .our-service.training {
+    background: url("images/services-img/treinamento.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .our-service.validation {
+    background: url("images/services-img/validacao.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .our-service--content {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--blue-color-page);
+    padding: 1rem 0.8rem;
+    z-index: 1;
+  }
+
+  .our-service--title {
+    text-align: center;
+  }
+
+  .our-service--title p {
+    font: var(--font-service-title-mobile);
+    color: var(--white-color);
+    margin-bottom: 0.8rem;
+  }
+
+  .our-service--text p {
+    font: var(--font-service-text-mobile);
+    color: var(--white-color);
+  }
+
+  .our-service::before {
+    content: "";
+    background: url("/images/icons/icons-service-img/laudo.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 44px;
+    top: 20%;
+    left: 35%;
+    bottom: 0;
+    position: absolute;
+  }
+
+  .our-service::after {
+    content: "";
+    width: 100%;
+    background-color: var(--principal-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+}

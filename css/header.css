@@ -2,7 +2,6 @@
 
 header {
   position: relative;
-  height: 700px;
 }
 
 header::before,
@@ -74,6 +73,13 @@ header::after {
   padding: 0.6rem;
 }
 
+@media (max-width: 1260px) {
+  .menu a {
+    padding: 0.4rem;
+    font: var(--font-list-mobile);
+  }
+}
+
 @media (max-width: 768px) {
   header {
     background-color: var(--blue-color-page);
@@ -114,9 +120,7 @@ header::after {
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 1;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     opacity: 1;

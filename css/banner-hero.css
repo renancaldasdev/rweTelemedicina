@@ -87,10 +87,12 @@
   .banner-equipment {
     width: 100%;
     background-color: var(--blue-color-page);
+    padding-bottom: 20px;
   }
 
   .banner-loaner--devices {
     width: 100%;
     background-color: var(--white-color);
+    padding-bottom: 20px;
   }
 }
