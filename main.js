@@ -1,1 +1,2 @@
-import "./js/menuToogle";
+import "./js/menuToggle";
+import "./js/removeContainer";
