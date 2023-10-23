@@ -1,6 +1,6 @@
 #how-it-works {
   background-color: var(--white-color);
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 .how-it-works--title h2 {
   font: var(--font-title-main);
@@ -42,7 +42,7 @@
 
 .how-it-work {
   flex: 1 30rem;
-  height: 32rem;
+  height: 30rem;
   border-radius: 0.8rem 0.8rem 0 0;
   position: relative;
   -webkit-box-shadow: 4px -11px 2px 0px rgba(23, 125, 155, 0.1);
@@ -51,25 +51,25 @@
 }
 
 .how-it-work.report-distance {
-  background-image: url("../images/how-it-works/laudo-distancia.png");
+  background-image: url("../images/how-it-works/laudo-distancia.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .how-it-work.sending-report {
-  background-image: url("../images/how-it-works/envio.png");
+  background-image: url("../images/how-it-works/envio.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .how-it-work.report {
-  background-image: url("../images/how-it-works/laudo.png");
+  background-image: url("../images/how-it-works/laudo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .how-it-work.result {
-  background-image: url("../images/how-it-works/resultado.png");
+  background-image: url("../images/how-it-works/resultado.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,6 +126,9 @@
 }
 
 @media (max-width: 768px) {
+  #how-it-works {
+    padding: 0;
+  }
   .how-it-works--title h2 {
     font: var(--font-title-main-mobile);
     padding-bottom: 0.5rem;
@@ -139,6 +142,7 @@
   }
   .how-it-work--text p {
     display: block;
+    height: 4rem;
   }
 
   .how-it-work::after {

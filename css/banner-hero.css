@@ -5,8 +5,8 @@
 
 .banner {
   max-width: 100%;
-  width: 460px;
-  height: 600px;
+  width: 46rem;
+  height: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,9 +48,13 @@
   color: var(--principal-color);
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
 @media (max-width: 768px) {
   .banner-hero {
-    height: 800px;
+    height: 100rem;
     flex-direction: column;
   }
 
@@ -59,10 +63,6 @@
     justify-content: center;
     height: 400px;
     flex: 1;
-  }
-
-  .banner ul {
-    margin-bottom: 6rem;
   }
 
   .banner h2 {
@@ -76,7 +76,7 @@
   }
 
   .banner ul {
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .banner li {

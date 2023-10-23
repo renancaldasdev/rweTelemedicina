@@ -1,0 +1,159 @@
+#specialties {
+  padding: 2rem 0rem;
+}
+
+.specialties--title h2 {
+  font: var(--font-title-main);
+  color: var(--white-color);
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.specialties--title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--white-color);
+  border-radius: 0 4px 4px 0;
+  width: 100%;
+  height: 0.4rem;
+}
+
+.specialties--title p {
+  color: var(--white-color);
+  font: var(--font-subtitle-mobile);
+  text-transform: uppercase;
+}
+
+.specialties-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  gap: 1rem;
+}
+
+.specialty {
+  flex: 1 30rem;
+  height: 18rem;
+  position: relative;
+  border-radius: 0.8rem;
+}
+
+.specialty.cardiologia {
+  background-image: url("../images/specialties/cardiologia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specialty.dermatologia {
+  background-image: url("../images/specialties/dermatologia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specialty.radiologia {
+  background-image: url("../images/specialties/radiologia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specialty.pneumologia {
+  background-image: url("../images/specialties/pneumologista.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specialty.neurologia {
+  background-image: url("../images/specialties/neurologista.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specialty.oftalmologia {
+  background-image: url("../images/specialties/oftalmo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specialty.ginecologia {
+  background-image: url("../images/specialties/ginecologia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.specialty-content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 1rem 0.8rem;
+  z-index: 1;
+}
+
+.specialty-content h3 {
+  position: absolute;
+  font: var(--font-list);
+  color: var(--white-color);
+  padding: 2rem 3rem;
+  border: 1px solid var(--white-color);
+  background-color: var(--principal-color);
+  border-radius: 5.4rem;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -160%);
+  display: none;
+}
+
+.specialty:hover .specialty-content h3 {
+  cursor: pointer;
+  display: block;
+}
+
+.specialty:hover::after,
+.specialty:hover .specialty-content p {
+  display: none;
+}
+
+.specialty-content p {
+  font: var(--font-list);
+  font-weight: 700;
+  color: var(--white-color);
+}
+
+.specialty::after {
+  content: "";
+  width: 100%;
+  background-color: var(--principal-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.4;
+  /* display: none; */
+}
+
+@media (max-width: 768px) {
+  #specialties {
+    padding: 0;
+  }
+  .specialties--title h2 {
+    font: var(--font-title-main-mobile);
+  }
+
+  .specialties--title p {
+    font: var(--font-list-mobile);
+    width: 310px;
+  }
+}

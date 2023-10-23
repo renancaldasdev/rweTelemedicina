@@ -1,6 +1,5 @@
 #our-services {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding: 2rem 0;
 }
 
 .our-services--title h2 {
@@ -37,33 +36,32 @@
   flex: 1 30rem;
   height: 30rem;
   position: relative;
-
-  object-fit: cover;
+  cursor: pointer;
 }
 
 .our-service.report {
-  background: url("images/services-img/estetoscopio.png");
+  background: url("images/services-img/laudos-distancia.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.lending {
-  background: url("images/services-img/comodato.png");
+  background: url("images/services-img/comodato.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.training {
-  background: url("images/services-img/treinamento.png");
+  background: url("images/services-img/treinamento.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.validation {
-  background: url("images/services-img/validacao.png");
+  background: url("images/services-img/validacao.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -80,7 +78,7 @@
   width: 44px;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -30%);
   bottom: 0;
   position: absolute;
   z-index: 2;
@@ -137,6 +135,9 @@
 }
 
 @media (max-width: 768px) {
+  #our-services {
+    padding: 0;
+  }
   .our-services--content {
     /* gap: 0.3rem; */
     justify-content: center;
@@ -149,6 +150,11 @@
   .our-service {
     flex: 1 200px;
     height: 24rem;
+  }
+
+  .our-service.report,
+  .our-service.validation {
+    flex: 2 400px;
   }
 
   .our-service.report::before {
