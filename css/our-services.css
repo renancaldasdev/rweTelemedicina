@@ -1,9 +1,6 @@
 #our-services {
   margin-top: 20px;
-}
-
-body {
-  height: 3000px;
+  margin-bottom: 20px;
 }
 
 .our-services--title h2 {
@@ -12,7 +9,8 @@ body {
   text-transform: uppercase;
   display: inline-block;
   position: relative;
-  padding-bottom: 16px;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .our-services--title h2::after {
@@ -26,88 +24,203 @@ body {
   height: 0.4rem;
 }
 
+.our-services--content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.our-service {
+  margin-top: 1.5rem;
+  flex: 1 30rem;
+  height: 30rem;
+  position: relative;
+}
+
+.our-service.report {
+  background: url("images/services-img/estetoscopio.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-service.lending {
+  background: url("images/services-img/comodato.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-service.training {
+  background: url("images/services-img/treinamento.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-service.validation {
+  background: url("images/services-img/validacao.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-service.report:hover::before,
+.our-service.lending:hover::before,
+.our-service.training:hover::before,
+.our-service.validation:hover::before {
+  content: "";
+  background: url("/images/icons/icons-service-img/laudo.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 44px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
+}
+
+.our-service:hover .our-service--text p {
+  display: block;
+}
+
+.our-service.lending:hover::before {
+  background: url("/images/icons/icons-service-img/comodato.svg");
+  background-repeat: no-repeat;
+}
+.our-service.validation:hover::before {
+  background: url("/images/icons/icons-service-img/laudos-distancia.svg");
+  background-repeat: no-repeat;
+}
+.our-service.training:hover::before {
+  background: url("/images/icons/icons-service-img/treinamento.svg");
+  background-repeat: no-repeat;
+}
+
+.our-service--content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--blue-color-page);
+  padding: 1rem 0.8rem;
+  z-index: 1;
+}
+
+.our-service--title {
+  text-align: center;
+}
+
+.our-service--title p {
+  font: var(--font-service-title);
+  color: var(--white-color);
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.our-service--text p {
+  font: var(--font-service-text);
+  color: var(--white-color);
+  display: none;
+  transition: all 0.3s ease;
+}
+
+.our-service:hover::after {
+  content: "";
+  width: 100%;
+  background-color: var(--principal-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.button-service {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
+}
+
 @media (max-width: 768px) {
+  .our-services--content {
+    /* gap: 0.3rem; */
+    justify-content: center;
+  }
   .our-services--title h2 {
     font: var(--font-title-main-mobile);
-    padding-bottom: 2px;
-  }
-  .our-services--content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* gap: 10px; */
+    padding-bottom: 0.3rem;
   }
 
   .our-service {
-    margin-top: 1.5rem;
-    width: 21rem;
-    height: 250px;
-    position: relative;
+    flex: 1 200px;
+    height: 24rem;
   }
 
-  .our-service.report {
-    background: url("images/services-img/estetoscopio.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .our-service.lending {
-    background: url("images/services-img/comodato.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .our-service.training {
-    background: url("images/services-img/treinamento.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .our-service.validation {
-    background: url("images/services-img/validacao.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .our-service--content {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    background-color: var(--blue-color-page);
-    padding: 1rem 0.8rem;
-    z-index: 1;
-  }
-
-  .our-service--title {
-    text-align: center;
-  }
-
-  .our-service--title p {
-    font: var(--font-service-title-mobile);
-    color: var(--white-color);
-    margin-bottom: 0.8rem;
-  }
-
-  .our-service--text p {
-    font: var(--font-service-text-mobile);
-    color: var(--white-color);
-  }
-
-  .our-service::before {
+  .our-service.report::before {
     content: "";
     background: url("/images/icons/icons-service-img/laudo.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 44px;
-    top: 20%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     bottom: 0;
     position: absolute;
+    z-index: 2;
+  }
+
+  .our-service.lending::before {
+    content: "";
+    background: url("/images/icons/icons-service-img/comodato.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 44px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .our-service.training::before {
+    content: "";
+    background: url("/images/icons/icons-service-img/treinamento.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 44px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+  }
+  .our-service.validation::before {
+    content: "";
+    background: url("/images/icons/icons-service-img/laudos-distancia.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 44px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .our-service--title p {
+    font: var(--font-service-title-mobile);
+  }
+  .our-service--text p {
+    font: var(--font-service-text-mobile);
+    display: block;
   }
 
   .our-service::after {
@@ -118,5 +231,11 @@ body {
     top: 0;
     bottom: 0;
     opacity: 0.6;
+  }
+}
+
+@media (max-width: 500px) {
+  .our-service {
+    flex: 1 200px;
   }
 }

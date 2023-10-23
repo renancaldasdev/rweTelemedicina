@@ -56,7 +56,7 @@ header::after {
   top: 2rem;
   right: 10px;
   cursor: pointer;
-  z-index: 2;
+  z-index: 999;
 }
 
 /* fim menu_toggle */
@@ -87,7 +87,7 @@ header::after {
 
   header::before,
   header::after {
-    content: none; /* Remove os elementos ::before e ::after */
+    content: none;
   }
 
   .header-content {
@@ -118,12 +118,14 @@ header::after {
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     opacity: 1;
+    z-index: 998;
+    overflow-y: hidden;
   }
 
   .menu-toggle {
