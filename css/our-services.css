@@ -37,6 +37,8 @@
   flex: 1 30rem;
   height: 30rem;
   position: relative;
+
+  object-fit: cover;
 }
 
 .our-service.report {
@@ -82,10 +84,6 @@
   bottom: 0;
   position: absolute;
   z-index: 2;
-}
-
-.our-service:hover .our-service--text p {
-  display: block;
 }
 
 .our-service.lending:hover::before {
@@ -136,13 +134,6 @@
   top: 0;
   bottom: 0;
   opacity: 0.6;
-}
-
-.button-service {
-  margin-top: 4rem;
-  display: flex;
-  justify-content: center;
-  margin: 4rem auto;
 }
 
 @media (max-width: 768px) {
@@ -215,11 +206,7 @@
     z-index: 2;
   }
 
-  .our-service--title p {
-    font: var(--font-service-title-mobile);
-  }
   .our-service--text p {
-    font: var(--font-service-text-mobile);
     display: block;
   }
 

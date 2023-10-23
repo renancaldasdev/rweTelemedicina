@@ -33,7 +33,7 @@
   --font-service-title: 800 2rem / 2.4rem var(--font-primary);
   --font-service-title-mobile: 800 1.2rem/1.5rem var(--font-primary);
 
-  --font-service-text: 400 1.2rem/2.4rem var(--font-primary);
+  --font-service-text: 400 1.6rem/2.4rem var(--font-primary);
   --font-service-text-mobile: 400 1rem/1.5rem var(--font-primary);
 }
 
@@ -67,6 +67,7 @@ a {
 
 .button {
   width: 18rem;
+  text-transform: uppercase;
 }
 
 .button a {
@@ -89,4 +90,11 @@ a {
 .button-white a:hover {
   color: var(--white-color);
   background: var(--principal-color);
+}
+
+.button-service {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  margin: 4rem auto;
 }
