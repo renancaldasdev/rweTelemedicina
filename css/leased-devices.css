@@ -1,0 +1,147 @@
+#leased-devices {
+  background-color: var(--white-color);
+  padding: 2rem 0;
+}
+
+.leased-devices--title h2 {
+  font: var(--font-title-main);
+  color: var(--principal-color);
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.leased-devices--title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--principal-color);
+  border-radius: 0 4px 4px 0;
+  width: 100%;
+  height: 0.4rem;
+}
+
+.leased-devices--title p {
+  color: var(--gray-color-page);
+  font: var(--font-subtitle);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.leased-device {
+  flex: 1 30rem;
+  height: 30rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+  position: relative;
+  -webkit-box-shadow: 4px -11px 2px 0px rgba(23, 125, 155, 0.1);
+  -moz-box-shadow: 4px -11px 2px 0px rgba(23, 125, 155, 0.1);
+  box-shadow: 4px -11px 2px 0px rgba(23, 125, 155, 0.1);
+}
+
+.leased-device.resonance {
+  background-image: url("../images/leased-devices-img/ressonancia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.leased-device.ophthalmology {
+  background-image: url("../images/leased-devices-img/oftamologia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.leased-device.report {
+  background-image: url("../images/how-it-works/laudo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.leased-device.result {
+  background-image: url("../images/how-it-works/resultado.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leased-device--content {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--blue-color-page);
+  padding: 1rem 0.8rem;
+  z-index: 1;
+}
+
+.leased-device--title {
+  text-align: center;
+}
+
+.leased-device--title p {
+  font: var(--font-service-title);
+  color: var(--white-color);
+  margin-bottom: 0.8rem;
+  text-transform: uppercase;
+}
+
+.leased-device--text p {
+  font: var(--font-service-text);
+  color: var(--white-color);
+  display: none;
+  text-align: center;
+}
+
+.leased-device:hover::after {
+  content: "";
+  width: 100%;
+  border-radius: 0.8rem 0.8rem 0 0;
+  background-color: var(--principal-color);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.leased-device:hover .leased-device--text p {
+  display: block;
+}
+
+.leased-devices-for-some-services {
+  color: var(--gray-color-page);
+  font: var(--font-subtitle);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  #leased-devices {
+    padding: 0;
+  }
+  .leased-devices--title h2 {
+    font: var(--font-title-main-mobile);
+    padding-bottom: 0.5rem;
+  }
+
+  .leased-devices--title p {
+    color: var(--gray-color-page);
+    font: var(--font-subtitle-mobile);
+    font-weight: 900;
+  }
+  .how-it-work--text p {
+    display: block;
+    height: 4rem;
+  }
+
+  .how-it-work::after {
+    content: "";
+    width: 100%;
+    background-color: var(--principal-color);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    opacity: 0.6;
+  }
+}
