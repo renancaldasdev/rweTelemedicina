@@ -154,12 +154,12 @@
     font: var(--font-subtitle-mobile);
     font-weight: 900;
   }
-  .how-it-work--text p {
+  .leased-device--text p {
     display: block;
     height: 4rem;
   }
 
-  .how-it-work::after {
+  .leased-device::after {
     content: "";
     width: 100%;
     background-color: var(--principal-color);
