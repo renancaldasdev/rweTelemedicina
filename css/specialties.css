@@ -141,7 +141,6 @@
   top: 0;
   bottom: 0;
   opacity: 0.4;
-  /* display: none; */
 }
 
 @media (max-width: 768px) {
@@ -155,5 +154,13 @@
   .specialties--title p {
     font: var(--font-list-mobile);
     width: 310px;
+  }
+  .specialty-content h3 {
+    display: block;
+    opacity: 0;
+  }
+  .specialty:hover::after,
+  .specialty:hover .specialty-content p {
+    display: block;
   }
 }

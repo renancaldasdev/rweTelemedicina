@@ -6,10 +6,11 @@
 .banner {
   max-width: 100%;
   width: 46rem;
-  height: 80rem;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 4rem 0;
 }
 
 .banner h2 {
@@ -54,13 +55,13 @@
 
 @media (max-width: 768px) {
   .banner-hero {
-    height: 100rem;
     flex-direction: column;
   }
 
   .banner {
     display: flex;
     justify-content: center;
+    padding: 2rem 2rem;
     height: 400px;
     flex: 1;
   }

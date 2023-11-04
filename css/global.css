@@ -35,6 +35,10 @@
 
   --font-service-text: 400 1.6rem/2.4rem var(--font-primary);
   --font-service-text-mobile: 400 1rem/1.5rem var(--font-primary);
+
+  --font-title-contact: 800 3.6rem/4rem var(--font-primary);
+  --font-title-contact-mobile: 800 2rem/3rem var(--font-primary);
+  --font-title-contact-number: 400 2.4rem/3.2rem var(--font-primary);
 }
 
 .container {
@@ -61,6 +65,7 @@ ul {
 }
 
 a {
+  display: block;
   text-decoration: none;
   color: var(--white-color);
 }
