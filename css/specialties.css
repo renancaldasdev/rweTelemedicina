@@ -124,7 +124,7 @@
 
 .specialty:hover::after,
 .specialty:hover .specialty-content p {
-  display: none;
+  visibility: hidden;
 }
 
 .specialty-content p {
