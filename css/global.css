@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -8,6 +8,7 @@
 
 :root {
   --font-primary: "Open Sans", sans-serif;
+  --font-statistics: "Concert One", sans-serif;
 
   --principal-color: #32495e;
   --white-color: #fff;
@@ -40,6 +41,13 @@
   --font-title-contact: 800 4.8rem/4rem var(--font-primary);
   --font-title-contact-mobile: 800 2rem/3rem var(--font-primary);
   --font-title-contact-number: 400 2.4rem/3.2rem var(--font-primary);
+
+  --font-title-statistics: 800 4.8rem/4rem var(--font-primary);
+  --font-title-statistics-mobile: 800 2rem/3rem var(--font-primary);
+  --font-paragraph-mobile-number: 300 4rem/3rem var(--font-primary);
+  --font-paragraph-mobile-number-mobile: 300 2.4rem/3rem var(--font-primary);
+  --font-title-statistics-number: 400 6rem/6rem var(--font-statistics);
+  --font-title-statistics-mobile-number: 800 4rem/5rem var(--font-statistics);
 }
 
 .container {
@@ -72,8 +80,9 @@ a {
 }
 
 .button {
-  width: 18rem;
-  text-transform: uppercase;
+  margin-top: 4rem;
+  display: flex;
+  /* justify-content: center; */
 }
 
 .button a {

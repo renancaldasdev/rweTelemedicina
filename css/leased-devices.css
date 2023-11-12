@@ -32,8 +32,8 @@
 }
 
 .leased-device {
-  flex: 1 30rem;
-  height: 30rem;
+  flex: 1 40rem;
+  height: 40rem;
   border-radius: 0.8rem 0.8rem 0 0;
   position: relative;
   -webkit-box-shadow: 4px -11px 2px 0px rgba(23, 125, 155, 0.1);
@@ -93,6 +93,7 @@
 .leased-device--content {
   position: absolute;
   width: 100%;
+  height: 10rem;
   bottom: 0;
   background-color: var(--blue-color-page);
   padding: 1rem 0.8rem;
@@ -117,7 +118,7 @@
   text-align: center;
 }
 
-.leased-device:hover::after {
+.leased-device::after {
   content: "";
   width: 100%;
   border-radius: 0.8rem 0.8rem 0 0;
@@ -128,7 +129,7 @@
   opacity: 0.6;
 }
 
-.leased-device:hover .leased-device--text p {
+.leased-device .leased-device--text p {
   display: block;
 }
 

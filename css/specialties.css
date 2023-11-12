@@ -122,10 +122,10 @@
   display: block;
 }
 
-.specialty:hover::after,
+/* .specialty:hover::after,
 .specialty:hover .specialty-content p {
   visibility: hidden;
-}
+} */
 
 .specialty-content p {
   font: var(--font-list);

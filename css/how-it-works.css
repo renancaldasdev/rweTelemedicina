@@ -42,7 +42,7 @@
 
 .how-it-work {
   flex: 1 40rem;
-  height: 30rem;
+  height: 40rem;
   border-radius: 0.8rem 0.8rem 0 0;
   position: relative;
   -webkit-box-shadow: 4px -11px 2px 0px rgba(23, 125, 155, 0.1);
@@ -78,6 +78,7 @@
 .how-it-work--content {
   position: absolute;
   width: 100%;
+  height: 100px;
   bottom: 0;
   background-color: var(--blue-color-page);
   padding: 1rem 0.8rem;
@@ -102,7 +103,7 @@
   text-align: center;
 }
 
-.how-it-work:hover::after {
+.how-it-work::after {
   content: "";
   width: 100%;
   border-radius: 0.8rem 0.8rem 0 0;
@@ -113,7 +114,7 @@
   opacity: 0.6;
 }
 
-.how-it-work:hover .how-it-work--text p {
+.how-it-work .how-it-work--text p {
   display: block;
 }
 
