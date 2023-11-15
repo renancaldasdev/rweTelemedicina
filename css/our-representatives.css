@@ -1,12 +1,27 @@
-.our-representatives {
-  padding: 2rem 0rem;
-  position: absolute;
+#our-representatives {
+  padding: 2rem 0rem !important;
+  /* background-color: red; */
 }
 
 .our-representatives--title h2 {
   font: var(--font-title-contact);
   color: var(--white-color);
   text-transform: uppercase;
+}
+
+.our-representatives--title {
+  position: relative;
+}
+
+.our-representatives--title::before {
+  content: "";
+  height: 80px;
+  width: 100%;
+  background-color: var(--blue-color-details);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 @media (max-width: 768px) {

@@ -7,6 +7,21 @@
   font: var(--font-title-statistics);
   color: var(--principal-color);
   text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.our-statistics--title h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--principal-color);
+  border-radius: 0 4px 4px 0;
+  width: 100%;
+  height: 0.4rem;
 }
 
 .our-statistics--content {

@@ -48,6 +48,12 @@
   --font-paragraph-mobile-number-mobile: 300 2.4rem/3rem var(--font-primary);
   --font-title-statistics-number: 400 6rem/6rem var(--font-statistics);
   --font-title-statistics-mobile-number: 800 4rem/5rem var(--font-statistics);
+
+  --font-title-data: 800 2rem/3rem var(--font-primary);
+  --font-text-data: 400 1.6rem/2.4rem var(--font-primary);
+
+  --font-title-footer: 800 2rem/3rem var(--font-primary);
+  --font-text-footer: 400 1.6rem/2.4rem var(--font-primary);
 }
 
 .container {

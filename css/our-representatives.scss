@@ -12,8 +12,9 @@ $red: #f7254c;
 .representatives-content {
   padding-left: 0;
   width: 100%;
-  float: left;
   overflow: hidden;
+  background-color: var(--principal-color);
+  padding-bottom: 4rem;
 }
 
 /* MAPA */
@@ -179,6 +180,11 @@ $red: #f7254c;
   }
 }
 @media (max-width: 991px) {
+  .parca .estado {
+    min-width: 328px;
+    max-width: 328px;
+    margin: 0 0 0 0;
+  }
   .parceiros .two .parca .estado {
     display: block;
     margin: 45px auto;
@@ -197,20 +203,27 @@ $red: #f7254c;
     margin: 0 auto;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .box-mapa {
     display: none;
   }
   .parca {
+    width: 100%;
     padding: 0;
+    margin: 0 auto;
   }
   .parca select {
     display: block;
     width: 328px;
   }
   .parca .estado {
+    width: 100%;
+
     min-width: 328px;
     max-width: 328px;
-    margin: 20px 0 0 0px;
+    margin: 20px auto 0 auto;
+  }
+  .representatives-content {
+    height: 465px;
   }
 }
