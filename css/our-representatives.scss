@@ -9,6 +9,13 @@ $red: #f7254c;
   transition: $args;
 }
 
+.representatives-content {
+  padding-left: 0;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+}
+
 /* MAPA */
 .box-mapa {
   position: relative;
@@ -16,6 +23,7 @@ $red: #f7254c;
   float: left;
   padding: 20px 0 0 15px;
 }
+
 #map {
   display: none;
   transform: scale(1.2);
@@ -45,10 +53,7 @@ $red: #f7254c;
   line-height: 16px;
   font-weight: bold;
 }
-#map .model-davi .state:hover .label_state {
-  display: block;
-  fill: #fff !important;
-}
+
 #map .model-davi .state .shape {
   fill: #ddd;
 }
@@ -64,8 +69,7 @@ $red: #f7254c;
 #map .model-davi .state .icon_state + .label_icon_state {
   fill: #fff;
 }
-#map .model-davi .state:hover .icon_state + .label_icon_state {
-}
+
 #map .model-davi .state .label_icon_state {
   fill: #666;
 }
@@ -109,7 +113,6 @@ $red: #f7254c;
   transition: all 0.3s ease-in-out;
   border: 1px solid #ddd;
   position: absolute;
-  margin-top: 45px;
   opacity: 0;
   border-radius: 5px;
   visibility: visible;
@@ -118,10 +121,11 @@ $red: #f7254c;
   right: 0;
   min-width: 230px;
   display: table;
-  margin: 57px 0 0 80px;
+  margin: 57px 0 0 160px;
   box-shadow: 0 1px 80px 0 rgba(0, 0, 0, 0.3);
   background-color: #fff;
 }
+
 .parca .estado h3 {
   margin-top: 0;
   display: block;
@@ -190,14 +194,23 @@ $red: #f7254c;
     top: 0;
     left: initial;
     display: table;
-    // margin: 0 auto;
+    margin: 0 auto;
   }
 }
 @media (max-width: 500px) {
   .box-mapa {
     display: none;
   }
+  .parca {
+    padding: 0;
+  }
   .parca select {
     display: block;
+    width: 328px;
+  }
+  .parca .estado {
+    min-width: 328px;
+    max-width: 328px;
+    margin: 20px 0 0 0px;
   }
 }

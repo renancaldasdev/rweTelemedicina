@@ -1,5 +1,6 @@
 .our-representatives {
   padding: 2rem 0rem;
+  position: absolute;
 }
 
 .our-representatives--title h2 {
