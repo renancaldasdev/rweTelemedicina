@@ -41,28 +41,28 @@
 }
 
 .our-service.report {
-  background: url("images/services-img/laudos-distancia.jpg");
+  background: url("/images/services-img/laudos-distancia.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.lending {
-  background: url("images/services-img/comodato.jpg");
+  background: url("/images/services-img/comodato.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.training {
-  background: url("images/services-img/treinamento.jpg");
+  background: url("/images/services-img/treinamento.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.validation {
-  background: url("images/services-img/validacao.jpg");
+  background: url("/images/services-img/validacao.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

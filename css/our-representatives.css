@@ -8,22 +8,6 @@
   text-transform: uppercase;
 }
 
-.our-representative {
-  flex: 1 40rem;
-  height: 40rem;
-}
-
-.our-representative-img {
-  height: 30rem;
-}
-
-.our-representative-img.norte {
-  background: url("../images/mapas/norte.png");
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 @media (max-width: 768px) {
   .our-representatives--title h2 {
     font: var(--font-title-contact-mobile);
