@@ -17,14 +17,14 @@ header::after {
 header::before {
   left: 0;
   background-color: var(--blue-color-page);
-  background-image: url("/images/bannher-hero-img/prancheta.png");
+  background-image: url("../images/bannher-hero-img/prancheta.png");
   background-position: bottom right;
   background-repeat: no-repeat;
 }
 header::after {
   left: 50%;
   background-color: var(--white-color);
-  background-image: url("/images/bannher-hero-img/maca.png");
+  background-image: url("../images/bannher-hero-img/maca.png");
   background-position: bottom -100px right;
   /* background-size: contain; */
   background-repeat: no-repeat;

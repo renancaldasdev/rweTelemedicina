@@ -41,28 +41,28 @@
 }
 
 .our-service.report {
-  background: url("/images/services-img/laudos-distancia.jpg");
+  background: url("../images/services-img/laudos-distancia.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.lending {
-  background: url("/images/services-img/comodato.jpg");
+  background: url("../images/services-img/comodato.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.training {
-  background: url("/images/services-img/treinamento.jpg");
+  background: url("../images/services-img/treinamento.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .our-service.validation {
-  background: url("/images/services-img/validacao.jpg");
+  background: url("../images/services-img/validacao.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +73,7 @@
 .our-service.training::before,
 .our-service.validation::before {
   content: "";
-  background: url("/images/icons/icons-service-img/laudo.svg");
+  background: url("../images/icons/icons-service-img/laudo.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 44px;
@@ -86,15 +86,15 @@
 }
 
 .our-service.lending::before {
-  background: url("/images/icons/icons-service-img/comodato.svg");
+  background: url("../images/icons/icons-service-img/comodato.svg");
   background-repeat: no-repeat;
 }
 .our-service.validation::before {
-  background: url("/images/icons/icons-service-img/laudos-distancia.svg");
+  background: url("../images/icons/icons-service-img/laudos-distancia.svg");
   background-repeat: no-repeat;
 }
 .our-service.training::before {
-  background: url("/images/icons/icons-service-img/treinamento.svg");
+  background: url("../images/icons/icons-service-img/treinamento.svg");
   background-repeat: no-repeat;
 }
 
@@ -160,7 +160,7 @@
 
   .our-service.report::before {
     content: "";
-    background: url("/images/icons/icons-service-img/laudo.svg");
+    background: url("../images/icons/icons-service-img/laudo.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 44px;
@@ -174,7 +174,7 @@
 
   .our-service.lending::before {
     content: "";
-    background: url("/images/icons/icons-service-img/comodato.svg");
+    background: url("../images/icons/icons-service-img/comodato.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 44px;
@@ -188,7 +188,7 @@
 
   .our-service.training::before {
     content: "";
-    background: url("/images/icons/icons-service-img/treinamento.svg");
+    background: url("../images/icons/icons-service-img/treinamento.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 44px;
@@ -201,7 +201,7 @@
   }
   .our-service.validation::before {
     content: "";
-    background: url("/images/icons/icons-service-img/laudos-distancia.svg");
+    background: url("../images/icons/icons-service-img/laudos-distancia.svg");
     background-repeat: no-repeat;
     background-size: contain;
     width: 44px;
